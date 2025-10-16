@@ -2,46 +2,103 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
-
-    <style media="(prefers-color-scheme: light)">
-      @import url('./src/styles/colors/light.css');
-    </style>
-    <style media="(prefers-color-scheme: dark)">
-      @import url('./src/styles/colors/dark.css');
-    </style>
+    <title>AskExperts</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <script type="module" src="/src/index.js"></script>
-
-    <!-- Блок: шапка -->
+    <!-- ШАПКА -->
     <header class="header">
       <div class="header__container">
-        <h1 class="header__logo">Мой сайт</h1>
-        <nav class="header__nav">
-          <ul class="nav-list">
-            <li class="nav-list__item"><a href="#" class="nav-list__link">Главная</a></li>
-            <li class="nav-list__item"><a href="#" class="nav-list__link nav-list__link--active">О нас</a></li>
-            <li class="nav-list__item"><a href="#" class="nav-list__link">Контакты</a></li>
-          </ul>
-        </nav>
+        <div class="header__top">
+          <span class="header__info">Monday - Friday 8AM - 9PM</span>
+          <span class="header__info">725 Park Ave, New York</span>
+          <div class="header__social">
+            <a href="#" class="header__social-link"><i>📷</i></a>
+            <a href="#" class="header__social-link"><i>📘</i></a>
+            <a href="#" class="header__social-link"><i>🐦</i></a>
+            <a href="#" class="header__social-link"><i>💼</i></a>
+          </div>
+        </div>
+        <div class="header__bottom">
+          <a href="#" class="header__logo">
+            <span class="header__logo-icon">💬</span>
+            AskExperts
+          </a>
+          <nav class="header__nav">
+            <ul class="nav-list">
+              <li class="nav-list__item"><a href="#" class="nav-list__link nav-list__link--active">Home</a></li>
+              <li class="nav-list__item"><a href="#" class="nav-list__link">Pages</a></li>
+              <li class="nav-list__item"><a href="#" class="nav-list__link">Services</a></li>
+              <li class="nav-list__item"><a href="#" class="nav-list__link">Work</a></li>
+              <li class="nav-list__item"><a href="#" class="nav-list__link">Contact</a></li>
+            </ul>
+          </nav>
+          <a href="tel:+18884521505" class="header__phone-btn">
+            <span class="header__phone-icon">📞</span>
+            (888) 452 1505
+          </a>
+        </div>
       </div>
     </header>
 
-    <!-- Блок: основной контент -->
-    <main class="main">
-      <section class="card">
-        <h2 class="card__title">Приветствие</h2>
-        <p class="card__text">Это пример карточки по методологии БЭМ.</p>
-        <button class="card__button card__button--primary">Нажми меня</button>
-      </section>
-    </main>
+    <!-- БАННЕР -->
+    <section class="hero">
+      <div class="hero__bg"></div>
+      <div class="hero__content">
+        <span class="hero__tag">SERVICES</span>
+        <h1 class="hero__title">Creative Services For Boost Your Business Growth</h1>
+      </div>
+    </section>
 
-    <!-- Блок: подвал -->
-    <footer class="footer">
-      <p class="footer__copyright">© 2025 Мой сайт</p>
-    </footer>
+    <!-- НАШЕ ВИДЕНИЕ -->
+    <section class="vision">
+      <div class="vision__container">
+        <div class="vision__text">
+          <span class="vision__label">OUR VISION</span>
+          <h2 class="vision__title">Turn your ideas into reality.</h2>
+          <p class="vision__description">
+            Capitalize on low hanging fruit to identify a ballpark value added activity beta test. Override the digital
+            divide with additional from DevOps.
+          </p>
+          <ul class="vision__list">
+            <li class="vision__item">Bring to the table win-win survival strategies to ensure proactive domination.</li>
+            <li class="vision__item">At the end of the day.</li>
+            <li class="vision__item">
+              Capitalize on low hanging fruit to identify a ballpark value added activity to beta test override the
+              digital.
+            </li>
+          </ul>
+        </div>
+        <div class="vision__image-wrapper">
+          <img src="https://via.placeholder.com/500x350?text=Team+Meeting" alt="Team working" class="vision__image" />
+          <div class="vision__decoration"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- СТАТИСТИКА -->
+    <section class="stats">
+      <div class="stats__container">
+        <div class="stat-item">
+          <div class="stat-item__number">1128+</div>
+          <div class="stat-item__label">Successful Work</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-item__number">908+</div>
+          <div class="stat-item__label">Team member</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-item__number">258+</div>
+          <div class="stat-item__label">Happy Customers</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-item__number">564+</div>
+          <div class="stat-item__label">Creative Idea</div>
+        </div>
+      </div>
+    </section>
+
+    <script type="module" src="/src/index.js"></script>
   </body>
 </html>
