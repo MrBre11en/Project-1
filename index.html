@@ -14,7 +14,34 @@
     </style>
   </head>
   <body>
-    <h1>Hello project</h1>
     <script type="module" src="/src/index.js"></script>
+
+    <!-- Блок: шапка -->
+    <header class="header">
+      <div class="header__container">
+        <h1 class="header__logo">Мой сайт</h1>
+        <nav class="header__nav">
+          <ul class="nav-list">
+            <li class="nav-list__item"><a href="#" class="nav-list__link">Главная</a></li>
+            <li class="nav-list__item"><a href="#" class="nav-list__link nav-list__link--active">О нас</a></li>
+            <li class="nav-list__item"><a href="#" class="nav-list__link">Контакты</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Блок: основной контент -->
+    <main class="main">
+      <section class="card">
+        <h2 class="card__title">Приветствие</h2>
+        <p class="card__text">Это пример карточки по методологии БЭМ.</p>
+        <button class="card__button card__button--primary">Нажми меня</button>
+      </section>
+    </main>
+
+    <!-- Блок: подвал -->
+    <footer class="footer">
+      <p class="footer__copyright">© 2025 Мой сайт</p>
+    </footer>
   </body>
 </html>

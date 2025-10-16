@@ -1,6 +1,107 @@
+/* Общие стили */
 body {
   background-color: var(--color-primary);
   color: var(--color-secondary);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+/* Блок: контактная информация */
+.topbar {
+  background-color: #181818;
+}
+
+/* Блок: шапка */
+.header {
+  background-color: #333;
+  color: white;
+  padding: 1rem 0;
+}
+
+.header__container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1rem;
+}
+
+.header__logo {
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+/* Блок: навигация */
+.nav-list {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 1rem;
+}
+
+.nav-list__item {
+  /* ничего не делаем, просто обёртка */
+}
+
+.nav-list__link {
+  color: white;
+  text-decoration: none;
+  padding: 0.5rem;
+}
+
+.nav-list__link--active {
+  background-color: #555;
+  border-radius: 4px;
+}
+
+/* Блок: основной контент */
+.main {
+  padding: 2rem 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Блок: карточка */
+.card {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.card__title {
+  font-size: 1.8rem;
+  margin-top: 0;
+}
+
+.card__text {
+  color: #555;
+  line-height: 1.6;
+}
+
+.card__button {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.card__button--primary {
+  background-color: #007bff;
+  color: white;
+}
+
+.card__button--primary:hover {
+  background-color: #0056b3;
+}
+
+/* Блок: подвал */
+.footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 1rem;
 }
