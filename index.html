@@ -2,9 +2,16 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>AskExperts</title>
-    <link rel="stylesheet" href="style.css" />
+    <title>Vite App</title>
+
+    <style media="(prefers-color-scheme: light)">
+      @import url('./src/styles/colors/light.css');
+    </style>
+    <!-- <style media="(prefers-color-scheme: dark)">
+      @import url('./src/styles/colors/dark.css');
+    </style> -->
   </head>
   <body>
     <!-- ШАПКА -->
@@ -44,17 +51,20 @@
 
     <!-- БАННЕР -->
     <section class="hero">
-      <div class="hero__bg"></div>
+      <div class="hero__bg">
+        <img src="src/images/header.png" alt="Banner" />
+        <div class="hero__overlay"></div>
+      </div>
       <div class="hero__content">
         <span class="hero__tag">SERVICES</span>
         <h1 class="hero__title">Creative Services For Boost Your Business Growth</h1>
       </div>
     </section>
 
-    <!-- НАШЕ ВИДЕНИЕ -->
-    <section class="vision">
-      <div class="vision__container">
-        <div class="vision__text">
+    <!-- НАШЕ ВИДЕНИЕ + СТАТИСТИКА -->
+    <section class="vision-stats">
+      <div class="vision-stats__container">
+        <div class="vision">
           <span class="vision__label">OUR VISION</span>
           <h2 class="vision__title">Turn your ideas into reality.</h2>
           <p class="vision__description">
@@ -62,8 +72,9 @@
             divide with additional from DevOps.
           </p>
           <ul class="vision__list">
-            <li class="vision__item">Bring to the table win-win survival strategies to ensure proactive domination.</li>
-            <li class="vision__item">At the end of the day.</li>
+            <li class="vision__item">
+              Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day.
+            </li>
             <li class="vision__item">
               Capitalize on low hanging fruit to identify a ballpark value added activity to beta test override the
               digital.
@@ -71,15 +82,15 @@
           </ul>
         </div>
         <div class="vision__image-wrapper">
-          <img src="https://via.placeholder.com/500x350?text=Team+Meeting" alt="Team working" class="vision__image" />
+          <div class="vision__image-placeholder">
+            <img src="src/images//Photo.png" alt="Team" />
+          </div>
           <div class="vision__decoration"></div>
         </div>
       </div>
-    </section>
 
-    <!-- СТАТИСТИКА -->
-    <section class="stats">
-      <div class="stats__container">
+      <!-- СТАТИСТИКА -->
+      <div class="stats">
         <div class="stat-item">
           <div class="stat-item__number">1128+</div>
           <div class="stat-item__label">Successful Work</div>
@@ -98,6 +109,184 @@
         </div>
       </div>
     </section>
+
+    <!-- ЦЕННОСТИ -->
+    <section class="values">
+      <div class="values__container">
+        <div class="values__header">
+          <span class="values__tag">GROWING WITH OUR CLIENTS</span>
+          <h2 class="values__title">Our core values & principles</h2>
+          <p class="values__description">
+            Capitalize on low hanging fruit to identify a ballpark value added activity beta test. Override the digital
+            divide with additional from DevOps.
+          </p>
+          <a href="#" class="values__btn">Get in touch</a>
+        </div>
+        <div class="values__cards">
+          <div class="card">
+            <div class="card__icon">📦</div>
+            <h3 class="card__title">Creative Ideas</h3>
+            <p class="card__text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris eget accumsan augue Donec aliquam.
+            </p>
+            <a href="#" class="card__link">Read More →</a>
+          </div>
+          <div class="card">
+            <div class="card__icon">📊</div>
+            <h3 class="card__title">Best Features</h3>
+            <p class="card__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <a href="#" class="card__link">Read More →</a>
+          </div>
+          <div class="card">
+            <div class="card__icon">⭐</div>
+            <h3 class="card__title">Experience</h3>
+            <p class="card__text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris eget accumsan augue Donec aliquam.
+            </p>
+            <a href="#" class="card__link">Read More →</a>
+          </div>
+          <div class="card">
+            <div class="card__icon">⚙️</div>
+            <h3 class="card__title">Easy Solutions</h3>
+            <p class="card__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <a href="#" class="card__link">Read More →</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ИСТОРИЯ / ВИДЕО -->
+    <section class="history">
+      <div class="history__container">
+        <span class="history__label">OUR HISTORY</span>
+        <h2 class="history__title">Better Website Means A User Experience</h2>
+        <p class="history__description">
+          Ipsum is the result of synergy between our teams and our customers. Our company culture is focused on
+          excellent productivity, customer satisfaction, respect for team and individual achievements.
+        </p>
+        <div class="history__video-placeholder">
+          <img src="src/images//Family.png" alt="Family" />
+          <div class="history__play-btn">▶</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- КОМАНДА -->
+    <section class="team">
+      <div class="team__container">
+        <span class="team__label">OUR TEAM</span>
+        <h2 class="team__title">We champion the bold to achieve the extraordinary</h2>
+        <p class="team__description">
+          Ipsum is the result of synergy between our teams and our customers. Our company culture is focused on
+          excellent productivity, customer satisfaction, respect for team.
+        </p>
+        <div class="team__members">
+          <div class="member">
+            <div class="member__photo-placeholder">
+              <img src="src/images//CEO.png" alt="Sarah Jasmine" />
+            </div>
+            <div class="member__role">CEO at Company</div>
+            <h3 class="member__name">Sarah Jasmine</h3>
+            <p class="member__bio">Leverage agile frameworks to provide a robust synopsis for high level overviews.</p>
+            <div class="member__social">
+              <a href="#"><i>📸</i></a>
+              <a href="#"><i>📘</i></a>
+              <a href="#"><i>🐦</i></a>
+            </div>
+          </div>
+          <div class="member">
+            <div class="member__photo-placeholder">
+              <img src="src/images//Manager.png" alt="John Carter" />
+            </div>
+            <div class="member__role">Manager</div>
+            <h3 class="member__name">John Carter</h3>
+            <p class="member__bio">Leverage agile frameworks to provide a robust synopsis for high level overviews.</p>
+            <div class="member__social">
+              <a href="#"><i>📸</i></a>
+              <a href="#"><i>📘</i></a>
+              <a href="#"><i>🐦</i></a>
+            </div>
+          </div>
+          <div class="member">
+            <div class="member__photo-placeholder">
+              <img src="src/images//CEO 2.png" alt="Daisy Stella" />
+            </div>
+            <div class="member__role">CEO at Company</div>
+            <h3 class="member__name">Daisy Stella</h3>
+            <p class="member__bio">Leverage agile frameworks to provide a robust synopsis for high level overviews.</p>
+            <div class="member__social">
+              <a href="#"><i>📸</i></a>
+              <a href="#"><i>📘</i></a>
+              <a href="#"><i>🐦</i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- БЛОК ЗАПИСИ -->
+    <section class="consult">
+      <div class="consult__container">
+        <div class="consult__content">
+          <span class="consult__tag">BOOK NOW</span>
+          <h2 class="consult__title">Better Consult, Better Results</h2>
+          <p class="consult__description">
+            Our software development agency has a growth up to 30% per each year. If you are result-oriented, not afraid
+            to take initiative – drop us a note and join our team!
+          </p>
+          <a href="tel:+18001234654" class="consult__phone-btn">
+            <span class="consult__phone-icon">📞</span>
+            +800 1234 654
+          </a>
+        </div>
+        <div class="consult__image-placeholder">
+          <!-- ВСТАВЬ ССЫЛКУ НА ИЗОБРАЖЕНИЕ -->
+          <!-- Пример: <img src="mockup.png" alt="Website mockup"> -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ФУТЕР -->
+    <footer class="footer">
+      <div class="footer__container">
+        <div class="footer__col">
+          <a href="#" class="footer__logo">
+            <span class="footer__logo-icon">💬</span>
+            AskExperts
+          </a>
+          <div class="footer__social">
+            <a href="#">Fb.</a> / <a href="#">Ig.</a> / <a href="#">Tw.</a> / <a href="#">Be.</a>
+          </div>
+        </div>
+        <div class="footer__col">
+          <h4 class="footer__title">Product</h4>
+          <ul class="footer__list">
+            <li><a href="#">Service</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Single Service</a></li>
+            <li><a href="#">Get Quote</a></li>
+            <li><a href="#">Prices</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4 class="footer__title">Company</h4>
+          <ul class="footer__list">
+            <li><a href="#">About</a></li>
+            <li><a href="#">News</a></li>
+            <li><a href="#">Contacts</a></li>
+            <li><a href="#">Testimonials</a></li>
+            <li><a href="#">Our team</a></li>
+            <li><a href="#">Our approach</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4 class="footer__title">Address</h4>
+          <p class="footer__address">1700 W Blanche St, klyer port south USA, America</p>
+          <a href="#" class="footer__btn">Book an Appointment</a>
+        </div>
+      </div>
+      <div class="footer__copyright">©2022 Consultalk. All rights reserved | Terms of Service | Privacy Policy</div>
+    </footer>
 
     <script type="module" src="/src/index.js"></script>
   </body>
