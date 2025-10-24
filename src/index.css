@@ -3,3 +3,15 @@
 @import './styles/normalize.css';
 @import './styles/global/utility.css';
 @import './styles/components/container.css';
+@import './styles/components/body.css';
+@import './styles/components/card.css';
+@import './styles/components/consult.css';
+@import './styles/components/footer.css';
+@import './styles/components/header.css';
+@import './styles/components/hero.css';
+@import './styles/components/history.css';
+@import './styles/components/member.css';
+@import './styles/components/stats.css';
+@import './styles/components/team.css';
+@import './styles/components/values.css';
+@import './styles/components/vision.css';

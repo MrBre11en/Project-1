@@ -1,0 +1,81 @@
+/* БЛОК ЗАПИСИ */
+.consult {
+  padding: 4rem 1rem;
+  background-color: white;
+}
+
+.consult__container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  gap: 3rem;
+  align-items: center;
+  background-color: #222;
+  padding: 3rem;
+  border-radius: 15px;
+}
+
+.consult__content {
+  flex: 1;
+  color: white;
+}
+
+.consult__tag {
+  display: inline-block;
+  background-color: var(--color-green);
+  color: white;
+  padding: 0.3rem 0.8rem;
+  border-radius: 15px;
+  font-size: 0.8rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.consult__title {
+  font-size: 2rem;
+  margin: 0.5rem 0 1rem;
+}
+
+.consult__description {
+  color: #ddd;
+  margin-bottom: 1.5rem;
+  max-width: 400px;
+}
+
+.consult__phone-btn {
+  display: inline-flex;
+  align-items: center;
+  background-color: var(--color-yellow);
+  color: #222;
+  padding: 0.75rem 1.5rem;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+
+.consult__phone-icon {
+  margin-right: 0.5rem;
+  font-size: 1.1rem;
+}
+
+.consult__image-placeholder {
+  flex: 1;
+  width: 100%;
+  max-width: 500px;
+  height: 300px;
+  background-color: #e0e0e0;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #888;
+  font-size: 0.9rem;
+}
+
+@media (width <= 768px) {
+  .consult__container {
+    flex-direction: column;
+    padding: 2rem;
+  }
+}

@@ -1,0 +1,43 @@
+/* КОМАНДА */
+.team {
+  padding: 4rem 1rem;
+  background-color: #f5f5f5;
+}
+
+.team__container {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.team__label {
+  display: inline-block;
+  background-color: var(--color-yellow);
+  color: #222;
+  padding: 0.3rem 0.8rem;
+  border-radius: 15px;
+  font-size: 0.8rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.team__title {
+  font-size: 2rem;
+  margin: 0.5rem 0 1rem;
+  color: #222;
+}
+
+.team__description {
+  color: #555;
+  margin-bottom: 2rem;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.team__members {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
