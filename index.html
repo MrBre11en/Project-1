@@ -16,8 +16,9 @@
   <body>
     <!-- ШАПКА -->
     <header class="header">
-      <div class="header__container">
-        <div class="header__top">
+      <!-- ВЕРХНЯЯ ЧАСТЬ ШАПКИ (БОЛЕЕ ТЁМНАЯ) -->
+      <div class="header__top-bar">
+        <div class="header__container">
           <span class="header__info">Monday - Friday 8AM - 9PM</span>
           <span class="header__info">725 Park Ave, New York</span>
           <div class="header__social">
@@ -27,7 +28,11 @@
             <a href="#" class="header__social-link"><i>💼</i></a>
           </div>
         </div>
-        <div class="header__bottom">
+      </div>
+
+      <!-- НИЖНЯЯ ЧАСТЬ ШАПКИ (ЧУТЬ СВЕТЛЕЕ) -->
+      <div class="header__main-bar">
+        <div class="header__container">
           <a href="#" class="header__logo">
             <span class="header__logo-icon">💬</span>
             AskExperts
@@ -55,9 +60,11 @@
         <img src="src/images/header.png" alt="Banner" />
         <div class="hero__overlay"></div>
       </div>
-      <div class="hero__content">
-        <span class="hero__tag">SERVICES</span>
-        <h1 class="hero__title">Creative Services For Boost Your Business Growth</h1>
+      <div class="hero__content-wrapper">
+        <div class="hero__content">
+          <span class="hero__tag">SERVICES</span>
+          <h1 class="hero__title">Creative Services For Boost Your Business Growth</h1>
+        </div>
       </div>
     </section>
 

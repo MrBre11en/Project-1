@@ -11,32 +11,35 @@ body {
   color: #333;
 }
 
-/* ШАПКА */
+/* ШАПКА — ОБЩИЕ СТИЛИ */
 .header {
-  background-color: var(--color-shadow);
-  color: white;
-  padding: 0.5rem 0;
+  background-color: transparent; /* убираем фон у обёртки */
 }
 
 .header__container {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 1rem;
+  display: flex;
+  align-items: center;
 }
 
-.header__top {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0.5rem 0;
+/* === ШАПКА — ВЕРХНЯЯ ЧАСТЬ (ОЧЕНЬ ТЁМНАЯ) === */
+.header__top-bar {
+  background-color: #111;
+  color: #bbb;
   font-size: 0.85rem;
-  color: #ccc;
-  border-bottom: 1px solid #444;
-  margin-bottom: 0.5rem;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #333;
+}
+
+.header__top-bar .header__container {
+  justify-content: space-between;
+  gap: 1rem;
 }
 
 .header__info {
-  margin-right: 1rem;
+  white-space: nowrap;
 }
 
 .header__social {
@@ -45,16 +48,26 @@ body {
 }
 
 .header__social-link {
-  color: #fff;
+  color: #ddd;
   text-decoration: none;
   font-size: 1rem;
 }
 
-.header__bottom {
+/* === ШАПКА — НИЖНЯЯ ЧАСТЬ (СВЕТЛЕЕ, НО ТЕПЕРЬ ЧУТЬ ВЫШЕ) === */
+.header__main-bar {
+  background-color: #222;
+
+  /* УВЕЛИЧЕНА ВЫСОТА — БЫЛО 0.75rem, СТАЛО 1.2rem */
+  padding: 1.2rem 0; /* ← ЭТО КЛЮЧЕВОЕ ИЗМЕНЕНИЕ */
+}
+
+.header__main-bar .header__container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  padding: 0.75rem 0;
+  justify-content: space-between;
 }
 
 .header__logo {
@@ -95,13 +108,13 @@ body {
   left: 0;
   width: 100%;
   height: 2px;
-  background-color: var(--color-yellow);
+  background-color: #fc0;
 }
 
 .header__phone-btn {
   display: flex;
   align-items: center;
-  background-color: var(--color-yellow);
+  background-color: #fc0;
   color: #222;
   padding: 0.5rem 1rem;
   border-radius: 25px;
@@ -122,7 +135,6 @@ body {
   overflow: hidden;
   display: flex;
   align-items: center;
-  justify-content: center;
 }
 
 .hero__bg {
@@ -138,6 +150,12 @@ body {
   justify-content: center;
 }
 
+.hero__bg img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
 .hero__overlay {
   position: absolute;
   top: 0;
@@ -147,23 +165,32 @@ body {
   background: rgb(0 0 0 / 30%);
 }
 
+/* === ИСПРАВЛЕНО: БЛОК С ТЕКСТОМ СМЕЩЁН ВЛЕВО === */
+.hero__content-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem; /* отступ слева/справа */
+  z-index: 1;
+}
+
 .hero__content {
   background-color: rgb(255 255 255 / 95%);
   padding: 2rem 3rem;
   border-radius: 15px;
-  text-align: center;
   max-width: 600px;
-  z-index: 1;
+  text-align: left; /* ❗ Выравнивание по левому краю */
 }
 
 .hero__tag {
   display: inline-block;
-  background-color: var(--color-yellow);
+  background-color: #fc0;
   color: #222;
   padding: 0.3rem 0.8rem;
-  border-radius: 15px;
+  border-radius: 4px;
   font-size: 0.8rem;
-  font-weight: normal;
+  font-weight: bold;
   margin-bottom: 1rem;
 }
 
