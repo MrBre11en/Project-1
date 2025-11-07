@@ -1,0 +1,13 @@
+.title {
+  font-size: 2rem;
+  color: #222;
+}
+
+.description__left {
+  color: #555;
+}
+
+.description__mid {
+  color: #555;
+  max-width: 600px;
+}

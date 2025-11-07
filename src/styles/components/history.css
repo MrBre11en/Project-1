@@ -6,33 +6,7 @@
 
 .history__container {
   max-width: 1200px;
-  margin: 0 auto;
   text-align: center;
-}
-
-.history__label {
-  display: inline-block;
-  background-color: var(--color-green);
-  color: white;
-  padding: 0.3rem 0.8rem;
-  border-radius: 15px;
-  font-size: 0.8rem;
-  font-weight: bold;
-  margin-bottom: 0.5rem;
-}
-
-.history__title {
-  font-size: 2rem;
-  margin: 0.5rem 0 1rem;
-  color: #222;
-}
-
-.history__description {
-  color: #555;
-  margin-bottom: 2rem;
-  max-width: 600px;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .history__video-placeholder {
@@ -41,7 +15,6 @@
   max-width: 800px;
   height: 300px;
   background-color: #e0e0e0;
-  margin: 0 auto;
   border-radius: 25px;
   overflow: hidden;
   display: flex;

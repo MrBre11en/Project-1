@@ -1,7 +1,6 @@
 .stats {
   display: flex;
   justify-content: space-around;
-  margin-top: 3rem;
   flex-wrap: wrap;
   gap: 1rem;
 }
@@ -9,9 +8,6 @@
 .stat-item {
   text-align: center;
   padding: 1.5rem;
-
-  /* background-color: white;
-  border-radius: 10px; */
   min-width: 200px;
 }
 
@@ -19,7 +15,6 @@
   font-size: 2.5rem;
   font-weight: bold;
   color: #222;
-  margin-bottom: 0.5rem;
 }
 
 .stat-item__label {

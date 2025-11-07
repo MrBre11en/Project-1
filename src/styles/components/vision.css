@@ -6,7 +6,6 @@
 
 .vision-stats__container {
   max-width: 1200px;
-  margin: 0 auto;
   display: flex;
   gap: 3rem;
   align-items: center;
@@ -14,28 +13,6 @@
 
 .vision {
   flex: 1;
-}
-
-.vision__label {
-  display: inline-block;
-  background-color: var(--color-green);
-  color: white;
-  padding: 0.3rem 0.8rem;
-  border-radius: 15px;
-  font-size: 0.8rem;
-  font-weight: bold;
-  margin-bottom: 1rem;
-}
-
-.vision__title {
-  font-size: 2rem;
-  margin: 0.5rem 0 1rem;
-  color: #222;
-}
-
-.vision__description {
-  color: #555;
-  margin-bottom: 1rem;
 }
 
 .vision__list {
@@ -46,7 +23,6 @@
 .vision__item {
   display: flex;
   align-items: flex-start;
-  margin-bottom: 0.75rem;
 }
 
 .vision__item::before {

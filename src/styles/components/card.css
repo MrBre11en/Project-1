@@ -11,19 +11,16 @@
 
 .card__icon {
   font-size: 2rem;
-  margin-bottom: 1rem;
   color: #222;
 }
 
 .card__title {
   font-size: 1.1rem;
-  margin: 0.5rem 0;
   color: #222;
 }
 
 .card__text {
   color: #555;
-  margin-bottom: 1rem;
   font-size: 0.9rem;
 }
 

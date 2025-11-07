@@ -6,7 +6,6 @@
 
 .consult__container {
   max-width: 1200px;
-  margin: 0 auto;
   display: flex;
   gap: 3rem;
   align-items: center;
@@ -20,25 +19,12 @@
   color: white;
 }
 
-.consult__tag {
-  display: inline-block;
-  background-color: var(--color-green);
-  color: white;
-  padding: 0.3rem 0.8rem;
-  border-radius: 15px;
-  font-size: 0.8rem;
-  font-weight: bold;
-  margin-bottom: 1rem;
-}
-
 .consult__title {
   font-size: 2rem;
-  margin: 0.5rem 0 1rem;
 }
 
 .consult__description {
   color: #ddd;
-  margin-bottom: 1.5rem;
   max-width: 400px;
 }
 
@@ -55,7 +41,6 @@
 }
 
 .consult__phone-icon {
-  margin-right: 0.5rem;
   font-size: 1.1rem;
 }
 
@@ -71,6 +56,7 @@
   justify-content: center;
   color: #888;
   font-size: 0.9rem;
+  overflow: hidden;
 }
 
 @media (width <= 768px) {
