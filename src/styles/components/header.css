@@ -68,7 +68,6 @@
 
 .header__logo-icon {
   margin-right: 0.5rem;
-  font-size: 1.4rem;
 }
 
 .header__nav ul {
@@ -80,7 +79,7 @@
 .header__phone-btn {
   display: flex;
   align-items: center;
-  background-color: #fc0;
+  background-color: white;
   color: #222;
   padding: 0.5rem 1rem;
   border-radius: 25px;
@@ -101,18 +100,22 @@
   position: relative;
 }
 
+.nav-list__link::before {
+  content: '○';
+  color: #848484;
+  font-weight: bold;
+  margin-right: 0.2rem;
+}
+
 .nav-list__link--active {
-  color: #fc0;
+  color: var(--color-green);
 }
 
 .nav-list__link--active::before {
-  content: '';
-  position: absolute;
-  bottom: -4px;
-  left: 0;
-  width: 100%;
-  height: 2px;
-  background-color: #fc0;
+  content: '●';
+  color: var(--color-green);
+  font-weight: bold;
+  margin-right: 0.2rem;
 }
 
 @media (width <= 768px) {

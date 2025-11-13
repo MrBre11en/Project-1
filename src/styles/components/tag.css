@@ -1,19 +1,27 @@
-.yellow__tag {
+.tag {
   display: inline-block;
-  background-color: var(--color-yellow);
-  color: #222;
   padding: 0.3rem 0.8rem;
   border-radius: 15px;
   font-size: 0.8rem;
   font-weight: bold;
 }
 
-.green__tag {
+.tag__yellow {
   display: inline-block;
-  background-color: var(--color-green);
-  color: white;
   padding: 0.3rem 0.8rem;
   border-radius: 15px;
   font-size: 0.8rem;
   font-weight: bold;
+  background-color: var(--color-yellow);
+  color: #222;
+}
+
+.tag__green {
+  display: inline-block;
+  padding: 0.3rem 0.8rem;
+  border-radius: 15px;
+  font-size: 0.8rem;
+  font-weight: bold;
+  background-color: var(--color-green);
+  color: white;
 }
