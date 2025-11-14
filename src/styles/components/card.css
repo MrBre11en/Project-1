@@ -3,6 +3,8 @@
   padding: 1.5rem;
   border-radius: 10px;
   transition: transform 0.2s;
+  min-height: 50%;
+  max-height: 100%;
 }
 
 .card:hover {

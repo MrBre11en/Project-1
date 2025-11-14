@@ -37,7 +37,6 @@
 .header__social-link {
   color: #ddd;
   text-decoration: none;
-  font-size: 1rem;
 }
 
 /* === ШАПКА — НИЖНЯЯ ЧАСТЬ (СВЕТЛЕЕ, НО ТЕПЕРЬ ЧУТЬ ВЫШЕ) === */
@@ -89,8 +88,7 @@
 }
 
 .header__phone-icon {
-  margin-right: 0.5rem;
-  font-size: 1.1rem;
+  margin-right: 0.1rem;
 }
 
 .nav-list__link {
