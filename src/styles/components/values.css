@@ -4,6 +4,16 @@
   background-color: #f5f5f5;
 }
 
+.values__title {
+  font-size: 2rem;
+  color: #222;
+}
+
+.values__description {
+  color: #555;
+  max-width: 600px;
+}
+
 .values__container {
   max-width: 1200px;
 }

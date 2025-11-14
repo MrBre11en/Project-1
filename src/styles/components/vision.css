@@ -1,4 +1,5 @@
 /* НАШЕ ВИДЕНИЕ + СТАТИСТИКА */
+
 .vision-stats {
   padding: 4rem 1rem;
   background-color: #fafafa;
@@ -13,6 +14,15 @@
 
 .vision {
   flex: 1;
+}
+
+.vision__title {
+  font-size: 2rem;
+  color: #222;
+}
+
+.vision__description {
+  color: #555;
 }
 
 .vision__list {
