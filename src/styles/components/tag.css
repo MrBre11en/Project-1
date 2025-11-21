@@ -6,22 +6,20 @@
   font-weight: bold;
 }
 
-.tag__yellow {
-  display: inline-block;
-  padding: 0.3rem 0.8rem;
-  border-radius: 15px;
-  font-size: 0.8rem;
-  font-weight: bold;
+.tag--yellow {
   background-color: var(--color-yellow);
-  color: #222;
+  color: var(--color-shadow);
 }
 
-.tag__green {
-  display: inline-block;
-  padding: 0.3rem 0.8rem;
-  border-radius: 15px;
-  font-size: 0.8rem;
-  font-weight: bold;
+.tag--green {
   background-color: var(--color-green);
-  color: white;
+  color: var(--color-primary);
+}
+
+.tag--margin-bottom {
+  margin-bottom: 1rem;
+}
+
+.tag--margin-bottom-05 {
+  margin-bottom: 0.5rem;
 }

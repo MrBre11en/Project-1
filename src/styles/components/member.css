@@ -1,5 +1,5 @@
 .member {
-  background-color: white;
+  background-color: var(--color-fourth);
   padding: 1.5rem;
   border-radius: 10px;
   text-align: center;
@@ -8,7 +8,7 @@
 .member__photo-placeholder {
   width: 100%;
   height: 300px;
-  background-color: #e0e0e0;
+  background-color: var(--color-fourth);
   border-radius: 10px;
   display: flex;
   align-items: center;
@@ -18,14 +18,26 @@
   overflow: hidden;
 }
 
+.member__photo-placeholder--margin-bottom {
+  margin-bottom: 1rem;
+}
+
 .member__name {
   font-size: 1.2rem;
-  color: #222;
+  color: var(--color-secondary);
+}
+
+.member__name--margin {
+  margin: 0.5rem 0;
 }
 
 .member__bio {
-  color: #555;
+  color: var(--color-third);
   font-size: 0.9rem;
+}
+
+.member__bio--margin-bottom {
+  margin-bottom: 1rem;
 }
 
 .member__social {
@@ -36,7 +48,7 @@
 }
 
 .member__social a {
-  color: #555;
+  color: var(--color-third);
   text-decoration: none;
   font-size: 1rem;
 }

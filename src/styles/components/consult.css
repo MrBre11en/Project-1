@@ -1,7 +1,7 @@
 /* БЛОК ЗАПИСИ */
 .consult {
   padding: 4rem 1rem;
-  background-color: white;
+  background-color: var(--color-primary);
 }
 
 .consult__container {
@@ -14,6 +14,10 @@
   border-radius: 15px;
 }
 
+.consult__container--margin {
+  margin: 0 auto;
+}
+
 .consult__content {
   flex: 1;
   color: white;
@@ -23,9 +27,17 @@
   font-size: 2rem;
 }
 
+.consult__title--margin {
+  margin: 0.5rem 0 1rem;
+}
+
 .consult__description {
   color: #ddd;
   max-width: 400px;
+}
+
+.consult__description--margin-bottom {
+  margin-bottom: 15rem;
 }
 
 .consult__phone-btn {
@@ -42,6 +54,10 @@
 
 .consult__phone-icon {
   font-size: 1.1rem;
+}
+
+.consult__phone-icon--margin {
+  margin-right: 0.5rem;
 }
 
 .consult__image-placeholder {

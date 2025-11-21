@@ -78,8 +78,8 @@
 .header__phone-btn {
   display: flex;
   align-items: center;
-  background-color: white;
-  color: #222;
+  background-color: var(--color-primary);
+  color: var(--color-secondary);
   padding: 0.5rem 1rem;
   border-radius: 25px;
   text-decoration: none;

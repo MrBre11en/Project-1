@@ -1,35 +1,57 @@
 /* ЦЕННОСТИ */
 .values {
   padding: 4rem 1rem;
-  background-color: #f5f5f5;
+  background-color: var(--color-primary);
 }
 
 .values__title {
   font-size: 2rem;
-  color: #222;
+  color: var(--color-secondary);
+}
+
+.values__title--margin {
+  margin: 0.5rem 0 1rem;
 }
 
 .values__description {
-  color: #555;
+  color: var(--color-third);
   max-width: 600px;
+}
+
+.values__description--margin {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 1rem;
 }
 
 .values__container {
   max-width: 1200px;
 }
 
+.values__container--margin {
+  margin: 0 auto;
+}
+
 .values__header {
   text-align: center;
 }
 
+.values__header--margin {
+  margin-bottom: 2rem;
+}
+
 .values__btn {
   display: inline-block;
-  background-color: #222;
-  color: white;
+  background-color: var(--color-secondary);
+  color: var(--color-primary);
   padding: 0.75rem 1.5rem;
   border-radius: 25px;
   text-decoration: none;
   font-weight: bold;
+}
+
+.values__btn--margin {
+  margin-top: 1rem;
 }
 
 .values__cards {
@@ -37,6 +59,10 @@
   grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
   grid-auto-rows: auto;
   gap: 1.5rem;
+}
+
+.values__cards--margin {
+  margin-top: 2rem;
 }
 
 @media (width <= 768px) {

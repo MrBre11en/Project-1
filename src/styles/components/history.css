@@ -1,22 +1,36 @@
 /* ИСТОРИЯ / ВИДЕО */
 .history {
   padding: 4rem 1rem;
-  background-color: white;
+  background-color: var(--color-primary);
 }
 
 .history__title {
   font-size: 2rem;
-  color: #222;
+  color: var(--color-secondary);
+}
+
+.history__title--margin {
+  margin: 0.5rem 0 1rem;
 }
 
 .history__description {
-  color: #555;
+  color: var(--color-third);
   max-width: 600px;
+}
+
+.history__description--margin {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 2rem;
 }
 
 .history__container {
   max-width: 1200px;
   text-align: center;
+}
+
+.history__container--margin {
+  margin: 0 auto;
 }
 
 .history__video-placeholder {
@@ -32,6 +46,10 @@
   justify-content: center;
   color: #888;
   font-size: 0.9rem;
+}
+
+.history__video-placeholder--margin {
+  margin: 0 auto;
 }
 
 .history__play-btn {

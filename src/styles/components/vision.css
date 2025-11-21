@@ -2,7 +2,7 @@
 
 .vision-stats {
   padding: 4rem 1rem;
-  background-color: #fafafa;
+  background-color: var(--color-primary);
 }
 
 .vision-stats__container {
@@ -12,17 +12,29 @@
   align-items: center;
 }
 
+vision-stats__container--margin {
+  margin: 0 auto;
+}
+
 .vision {
   flex: 1;
 }
 
 .vision__title {
   font-size: 2rem;
-  color: #222;
+  color: var(--color-secondary);
+}
+
+.vision__title--margin {
+  margin: 0.5rem 0 1rem;
 }
 
 .vision__description {
-  color: #555;
+  color: var(--color-third);
+}
+
+.vision__description--margin {
+  margin-bottom: 1rem;
 }
 
 .vision__list {
@@ -33,6 +45,11 @@
 .vision__item {
   display: flex;
   align-items: flex-start;
+  color: var(--color-third);
+}
+
+.vision__item--margin {
+  margin-bottom: 0.75rem;
 }
 
 .vision__item::before {

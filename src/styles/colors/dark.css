@@ -3,4 +3,6 @@
 
   --color-primary: var(--color-black);
   --color-secondary: var(--color-white);
+  --color-third: var(--color-lightgray);
+  --color-fourth: var(--color-almostblack);
 }

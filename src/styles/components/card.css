@@ -1,5 +1,5 @@
 .card {
-  background-color: white;
+  background-color: var(--color-fourth);
   padding: 1.5rem;
   border-radius: 10px;
   transition: transform 0.2s;
@@ -13,17 +13,29 @@
 
 .card__icon {
   font-size: 2rem;
-  color: #222;
+  color: var(--color-secondary);
+}
+
+.card__icon--margin-bottom {
+  margin-bottom: 1rem;
 }
 
 .card__title {
   font-size: 1.1rem;
-  color: #222;
+  color: var(--color-secondary);
+}
+
+.card__title--margin {
+  margin: 0.5rem 0;
 }
 
 .card__text {
-  color: #555;
+  color: var(--color-third);
   font-size: 0.9rem;
+}
+
+.card__text--margin-bottom {
+  margin-bottom: 1rem;
 }
 
 .card__link {
