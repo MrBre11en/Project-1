@@ -21,19 +21,10 @@ vision-stats__container--margin {
 }
 
 .vision__title {
-  font-size: 2rem;
-  color: var(--color-secondary);
-}
-
-.vision__title--margin {
   margin: 0.5rem 0 1rem;
 }
 
 .vision__description {
-  color: var(--color-third);
-}
-
-.vision__description--margin {
   margin-bottom: 1rem;
 }
 

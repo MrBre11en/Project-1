@@ -5,20 +5,10 @@
 }
 
 .values__title {
-  font-size: 2rem;
-  color: var(--color-secondary);
-}
-
-.values__title--margin {
   margin: 0.5rem 0 1rem;
 }
 
 .values__description {
-  color: var(--color-third);
-  max-width: 600px;
-}
-
-.values__description--margin {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 1rem;

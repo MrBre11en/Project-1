@@ -5,20 +5,10 @@
 }
 
 .history__title {
-  font-size: 2rem;
-  color: var(--color-secondary);
-}
-
-.history__title--margin {
   margin: 0.5rem 0 1rem;
 }
 
 .history__description {
-  color: var(--color-third);
-  max-width: 600px;
-}
-
-.history__description--margin {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 2rem;

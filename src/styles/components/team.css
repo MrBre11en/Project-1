@@ -5,20 +5,10 @@
 }
 
 .team__title {
-  font-size: 2rem;
-  color: var(--color-secondary);
-}
-
-.team__title--margin {
   margin: 0.5rem 0 1rem;
 }
 
 .team__description {
-  color: var(--color-third);
-  max-width: 600px;
-}
-
-.team__description--margin {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 2rem;
