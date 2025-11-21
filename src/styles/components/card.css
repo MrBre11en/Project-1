@@ -14,9 +14,6 @@
 .card__icon {
   font-size: 2rem;
   color: var(--color-secondary);
-}
-
-.card__icon--margin-bottom {
   margin-bottom: 1rem;
 }
 
@@ -32,9 +29,6 @@
 .card__text {
   color: var(--color-third);
   font-size: 0.9rem;
-}
-
-.card__text--margin-bottom {
   margin-bottom: 1rem;
 }
 

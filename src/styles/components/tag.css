@@ -6,6 +6,14 @@
   font-weight: bold;
 }
 
+.tag__name {
+  font-size: 30px;
+}
+
+.tag__desc {
+  font-size: 40px;
+}
+
 .tag--yellow {
   background-color: var(--color-yellow);
   color: var(--color-shadow);
