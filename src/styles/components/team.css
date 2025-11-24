@@ -1,7 +1,10 @@
 /* КОМАНДА */
 .team {
-  padding: 4rem 1rem;
   background-color: var(--color-primary);
+}
+
+.team__tag {
+  margin-bottom: 0.5rem;
 }
 
 .team__title {
@@ -15,11 +18,9 @@
 }
 
 .team__container {
+  padding: 4rem 1rem;
   max-width: 1200px;
   text-align: center;
-}
-
-.team__container--margin {
   margin: 0 auto;
 }
 
@@ -27,8 +28,5 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 2rem;
-}
-
-.team__members--margin-top {
   margin-top: 2rem;
 }

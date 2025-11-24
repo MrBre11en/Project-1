@@ -1,23 +1,11 @@
 /* НАШЕ ВИДЕНИЕ + СТАТИСТИКА */
 
-.vision-stats {
-  padding: 4rem 1rem;
-  background-color: var(--color-primary);
-}
-
-.vision-stats__container {
-  max-width: 1200px;
-  display: flex;
-  gap: 3rem;
-  align-items: center;
-}
-
-vision-stats__container--margin {
-  margin: 0 auto;
-}
-
 .vision {
   flex: 1;
+}
+
+.vision__tag {
+  margin-bottom: 1rem;
 }
 
 .vision__title {
@@ -33,13 +21,14 @@ vision-stats__container--margin {
   padding-left: 0;
 }
 
+.vision__stats {
+  margin-top: 3rem;
+}
+
 .vision__item {
   display: flex;
   align-items: flex-start;
   color: var(--color-third);
-}
-
-.vision__item--margin {
   margin-bottom: 0.75rem;
 }
 

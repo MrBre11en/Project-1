@@ -1,6 +1,5 @@
 /* БЛОК ЗАПИСИ */
 .consult {
-  padding: 4rem 1rem;
   background-color: var(--color-primary);
 }
 
@@ -12,15 +11,16 @@
   background-color: #222;
   padding: 3rem;
   border-radius: 15px;
-}
-
-.consult__container--margin {
   margin: 0 auto;
 }
 
 .consult__content {
   flex: 1;
   color: white;
+}
+
+.consult__tag {
+  margin-bottom: 1rem;
 }
 
 .consult__title {
@@ -47,9 +47,6 @@
 
 .consult__phone-icon {
   font-size: 1.1rem;
-}
-
-.consult__phone-icon--margin {
   margin-right: 0.5rem;
 }
 

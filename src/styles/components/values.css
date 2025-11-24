@@ -1,7 +1,10 @@
 /* ЦЕННОСТИ */
 .values {
-  padding: 4rem 1rem;
   background-color: var(--color-primary);
+}
+
+.values__tag {
+  margin-bottom: 0.5rem;
 }
 
 .values__title {
@@ -15,18 +18,13 @@
 }
 
 .values__container {
+  padding: 4rem 1rem;
   max-width: 1200px;
-}
-
-.values__container--margin {
   margin: 0 auto;
 }
 
 .values__header {
   text-align: center;
-}
-
-.values__header--margin {
   margin-bottom: 2rem;
 }
 
@@ -38,9 +36,6 @@
   border-radius: 25px;
   text-decoration: none;
   font-weight: bold;
-}
-
-.values__btn--margin {
   margin-top: 1rem;
 }
 
@@ -49,9 +44,6 @@
   grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
   grid-auto-rows: auto;
   gap: 1.5rem;
-}
-
-.values__cards--margin {
   margin-top: 2rem;
 }
 

@@ -6,14 +6,6 @@
   font-weight: bold;
 }
 
-.tag__name {
-  font-size: 30px;
-}
-
-.tag__desc {
-  font-size: 40px;
-}
-
 .tag--yellow {
   background-color: var(--color-yellow);
   color: var(--color-shadow);
@@ -22,12 +14,4 @@
 .tag--green {
   background-color: var(--color-green);
   color: var(--color-primary);
-}
-
-.tag--margin-bottom {
-  margin-bottom: 1rem;
-}
-
-.tag--margin-bottom-05 {
-  margin-bottom: 0.5rem;
 }

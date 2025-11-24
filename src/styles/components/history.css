@@ -1,7 +1,10 @@
 /* ИСТОРИЯ / ВИДЕО */
 .history {
-  padding: 4rem 1rem;
   background-color: var(--color-primary);
+}
+
+.history__tag {
+  margin-bottom: 1rem;
 }
 
 .history__title {
@@ -15,11 +18,9 @@
 }
 
 .history__container {
+  padding: 4rem 1rem;
   max-width: 1200px;
   text-align: center;
-}
-
-.history__container--margin {
   margin: 0 auto;
 }
 
@@ -36,9 +37,6 @@
   justify-content: center;
   color: #888;
   font-size: 0.9rem;
-}
-
-.history__video-placeholder--margin {
   margin: 0 auto;
 }
 

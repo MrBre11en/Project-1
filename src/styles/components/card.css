@@ -20,9 +20,6 @@
 .card__title {
   font-size: 1.1rem;
   color: var(--color-secondary);
-}
-
-.card__title--margin {
   margin: 0.5rem 0;
 }
 
