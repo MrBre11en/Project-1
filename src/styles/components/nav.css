@@ -1,0 +1,24 @@
+.nav-list__link {
+  color: #ddd;
+  text-decoration: none;
+  font-size: 0.9rem;
+  position: relative;
+}
+
+.nav-list__link::before {
+  content: '○';
+  color: #848484;
+  font-weight: bold;
+  margin-right: 0.2rem;
+}
+
+.nav-list__link--active {
+  color: var(--color-green);
+}
+
+.nav-list__link--active::before {
+  content: '●';
+  color: var(--color-green);
+  font-weight: bold;
+  margin-right: 0.2rem;
+}

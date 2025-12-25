@@ -1,6 +1,6 @@
 /* ШАПКА — ОБЩИЕ СТИЛИ */
 .header {
-  background-color: transparent; /* убираем фон у обёртки */
+  background-color: transparent;
 }
 
 .header__container {
@@ -11,7 +11,7 @@
   align-items: center;
 }
 
-/* === ШАПКА — ВЕРХНЯЯ ЧАСТЬ (ОЧЕНЬ ТЁМНАЯ) === */
+/* === ШАПКА — ВЕРХНЯЯ ЧАСТЬ === */
 .header__top-bar {
   background-color: #111;
   color: #bbb;
@@ -20,7 +20,7 @@
   border-bottom: 1px solid #333;
 }
 
-.header__top-bar .header__container {
+.header__top-bar-container {
   justify-content: space-between;
   gap: 1rem;
 }
@@ -39,15 +39,13 @@
   text-decoration: none;
 }
 
-/* === ШАПКА — НИЖНЯЯ ЧАСТЬ (СВЕТЛЕЕ, НО ТЕПЕРЬ ЧУТЬ ВЫШЕ) === */
+/* === ШАПКА — НИЖНЯЯ ЧАСТЬ === */
 .header__main-bar {
   background-color: #222;
-
-  /* УВЕЛИЧЕНА ВЫСОТА — БЫЛО 0.75rem, СТАЛО 1.2rem */
-  padding: 1.2rem 0; /* ← ЭТО КЛЮЧЕВОЕ ИЗМЕНЕНИЕ */
+  padding: 1.2rem 0;
 }
 
-.header__main-bar .header__container {
+.header__main-bar-container {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 1rem;
@@ -69,7 +67,7 @@
   margin-right: 0.5rem;
 }
 
-.header__nav ul {
+.header__nav-list {
   display: flex;
   list-style: none;
   gap: 1.5rem;
@@ -91,31 +89,6 @@
   margin-right: 0.1rem;
 }
 
-.nav-list__link {
-  color: #ddd;
-  text-decoration: none;
-  font-size: 0.9rem;
-  position: relative;
-}
-
-.nav-list__link::before {
-  content: '○';
-  color: #848484;
-  font-weight: bold;
-  margin-right: 0.2rem;
-}
-
-.nav-list__link--active {
-  color: var(--color-green);
-}
-
-.nav-list__link--active::before {
-  content: '●';
-  color: var(--color-green);
-  font-weight: bold;
-  margin-right: 0.2rem;
-}
-
 @media (width <= 768px) {
   .header__top {
     flex-direction: column;
@@ -126,5 +99,26 @@
   .header__bottom {
     flex-direction: column;
     gap: 1rem;
+  }
+
+  .header__logo {
+    display: none;
+  }
+
+  .header__logo-icon {
+    display: none;
+  }
+
+  .header__nav-list {
+    order: 2;
+    gap: 0.5rem;
+  }
+
+  .header__top-bar-container {
+    align-items: center;
+  }
+
+  .header__main-bar {
+    padding: 0.2rem 0;
   }
 }

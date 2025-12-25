@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Vite App</title>
 
     <style media="(prefers-color-scheme: light)">
@@ -18,7 +18,7 @@
     <header class="header">
       <!-- ВЕРХНЯЯ ЧАСТЬ ШАПКИ (БОЛЕЕ ТЁМНАЯ) -->
       <div class="header__top-bar">
-        <div class="header__container">
+        <div class="header__container header__top-bar-container">
           <span class="header__info">
             <!-- <img src="src/images/Clock.svg" alt="Clock" width="10%" /> -->
             Monday - Friday 8AM - 9PM
@@ -46,7 +46,7 @@
 
       <!-- НИЖНЯЯ ЧАСТЬ ШАПКИ (ЧУТЬ СВЕТЛЕЕ) -->
       <div class="header__main-bar">
-        <div class="header__container">
+        <div class="header__container header__main-bar-container">
           <a href="#" class="header__logo">
             <span class="header__logo-icon">
               <img src="src/images/Logo.svg" alt="Logo" width="85%" />
@@ -54,7 +54,7 @@
             AskExperts
           </a>
           <nav class="header__nav">
-            <ul class="nav-list">
+            <ul class="header__nav-list nav-list">
               <li class="nav-list__item"><a href="#" class="nav-list__link nav-list__link--active">Home</a></li>
               <li class="nav-list__item"><a href="#" class="nav-list__link">Pages</a></li>
               <li class="nav-list__item"><a href="#" class="nav-list__link">Services</a></li>
@@ -74,7 +74,7 @@
 
     <!-- БАННЕР -->
     <section class="hero">
-      <div class="hero__bg">
+      <div class="hero__bg hero__bg-image">
         <img src="src/images/header.png" alt="Banner" />
         <div class="hero__overlay"></div>
       </div>
@@ -197,9 +197,9 @@
           Ipsum is the result of synergy between our teams and our customers. Our company culture is focused on
           excellent productivity, customer satisfaction, respect for team and individual achievements.
         </p>
-        <div class="history__video-placeholder">
+        <div class="video-placeholder history__video-placeholder">
           <img src="src/images//Family.png" alt="Family" />
-          <div class="history__play-btn">▶</div>
+          <div class="video-placeholder__play-btn">▶</div>
         </div>
       </div>
     </section>
@@ -308,13 +308,13 @@
             </span>
             AskExperts
           </a>
-          <div class="footer__social">
+          <div class="footer__social footer__social-link">
             <a href="#">Fb.</a> / <a href="#">Ig.</a> / <a href="#">Tw.</a> / <a href="#">Be.</a>
           </div>
         </div>
         <div class="footer__col">
           <h4 class="footer__title">Product</h4>
-          <ul class="footer__list">
+          <ul class="footer__list footer__list-li">
             <li><a href="#">Service</a></li>
             <li><a href="#">FAQ</a></li>
             <li><a href="#">Single Service</a></li>
@@ -324,7 +324,7 @@
         </div>
         <div class="footer__col">
           <h4 class="footer__title">Company</h4>
-          <ul class="footer__list">
+          <ul class="footer__list footer__list-a">
             <li><a href="#">About</a></li>
             <li><a href="#">News</a></li>
             <li><a href="#">Contacts</a></li>

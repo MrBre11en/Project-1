@@ -19,4 +19,6 @@
 @import './styles/components/title.css';
 @import './styles/components/description.css';
 @import './styles/components/vision-stats.css';
+@import './styles/components/video-placeholder.css';
+@import './styles/components/nav.css';
 @import './styles/components/pattern-bg.css';

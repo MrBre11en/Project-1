@@ -39,7 +39,7 @@
   font-size: 0.9rem;
 }
 
-.footer__social a {
+.footer__social-link {
   color: #ccc;
   text-decoration: none;
 }
@@ -55,11 +55,11 @@
   padding-left: 0;
 }
 
-.footer__list li {
+.footer__list-li {
   margin-bottom: 0.5rem;
 }
 
-.footer__list a {
+.footer__list-a {
   color: #ccc;
   text-decoration: none;
   font-size: 0.9rem;
